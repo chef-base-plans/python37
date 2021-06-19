@@ -55,7 +55,6 @@ do_build() {
               --enable-shared \
               --with-threads \
               --with-system-expat \
-              --with-system-ffi \
               --with-ensurepip \
               --enable-optimizations
   make
