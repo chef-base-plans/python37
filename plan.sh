@@ -50,15 +50,14 @@ do_prepare() {
 }
 
 do_build() {
-  # TODO: We should build with `--enable-optimizations`
   ./configure --prefix="$pkg_prefix" \
               --enable-loadable-sqlite-extensions \
               --enable-shared \
               --with-threads \
               --with-system-expat \
               --with-system-ffi \
-              --with-ensurepip
-
+              --with-ensurepip \
+              --enable-optimizations
   make
 }
 
